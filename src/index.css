@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +11,109 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+a.logo{
+  display: block;
+  height: 80px;
+  width: 210px;
+  background-image: url('./components/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.navbar ul {
+  display: inline-flex;
+  gap: 30px;
+}
+.home-template .section-1{
+    background-color: #f8f9ff;
+    padding: 20px 100px;
+}
+.home-template .section-1 span{
+  color: #FFA70B;
+}
+.home-template .section-1 .title::before{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, 50%);
+  left: -42px;
+  right: 0;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #cfdaff
+}
+.home-template .section-2{
+  padding: 20px 100px;
+}
+.home-template .section-2 .title::before{
+  position: absolute;
+  top: 10%;
+  left: -42px;
+  right: 0;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #cfdaff
+}
+
+.home-template .section-3{
+  padding: 20px 100px;
+  position: relative;
+}
+.home-template .section-3 .step::before{
+  content: 'Step 1';
+  position: absolute;
+  top: 14.5%;
+  left: 3%;
+  display: block;
+  color: #9998c2;
+  font-size: 18px;
+  font-weight: 500;
+}
+.home-template .section-3 .title::before{
+  position: absolute;
+  top: 10%;
+  left: -42px;
+  right: 0;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #cfdaff
+}
+.stacks .card{
+    border: 1px solid #cfdaff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.stacks .card input{
+  position: absolute;
+  right: 0;
+  margin: 8px;
+}
+.stacks .card h5{
+  font-size: 18px;
+}
+.stacks .card p{
+  font-size: 14px;
+}
+.stacks .stack-title{
+  margin-top:1.5rem ;
+  font-size: 18px;
+}
+.stacks .stack-title span{
+  font-size: 14px;
+}
+.btn-orange{
+  background-color: #FFA70B!important;
+  width: 100px;
+  color: #fff!important;
+  font-weight: 700!important;
 }
