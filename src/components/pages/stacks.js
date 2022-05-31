@@ -35,7 +35,7 @@ class Stacks extends React.Component {
     }
 
 	render() {
-        const handleOnchange = Object.keys(this.state.stacks);
+       
 		const selectedStacks = Object.keys(this.state.stacks)
 			.filter((key) => this.state.stacks[key])
 			.join(", ");
@@ -91,7 +91,7 @@ class Stacks extends React.Component {
 
                             <div className="col">
                                 <div className="card">
-                                    <input checked={this.state.stacks.nodejsTypeORM} onChange={this.handleClick} type="checkbox" name="nodejsTypeORM" /> 
+                                    <input checked={this.state.stacks.nodejsTypeORM} onChange={this.handleClick} type="checkbox" name="NodejsTypeORM" /> 
                                     <h5>Node js + TypeORM</h5>
                                     <p>Application without backend and database, only with front-end. 'create-react-app' for example.</p>
                                 </div>
