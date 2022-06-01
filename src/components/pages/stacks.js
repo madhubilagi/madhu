@@ -92,7 +92,7 @@ class Stacks extends React.Component {
 
                             <div className="col">
                                 <div className="card">
-                                    <input checked={this.state.stacks.nodejsTypeORM} onChange={this.handleClick} type="checkbox" name="NodejsTypeORM" /> 
+                                    <input checked={this.state.stacks.nodejsTypeORM} onChange={this.handleClick} type="checkbox" name="nodejsTypeORM" /> 
                                     <h5>Node js + TypeORM</h5>
                                     <p>Application without backend and database, only with front-end. 'create-react-app' for example.</p>
                                 </div>
