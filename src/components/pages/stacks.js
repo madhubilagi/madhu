@@ -32,6 +32,7 @@ class Stacks extends React.Component {
 
     handleOnchange = (e) => {
         this.setState({[e.target.name]:e.target.value})
+        console.log('button is clicked')
     }
 
 	render() {
@@ -124,7 +125,7 @@ class Stacks extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <button className="btn btn-orange my-4">Submit</button>
+                        <button onClick={this.handleOnchange} className="btn btn-orange my-4">Submit</button>
 					</div>
 					
                     <p>Application Name: {this.state.aname}</p>
